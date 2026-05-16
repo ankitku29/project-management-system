@@ -1,74 +1,130 @@
-# 🌟 MERN B2B Teams Project Management SaaS 
+# 🚀 PeakPlan — Enterprise Team Collaboration Platform
 
-## 📌 Project Overview  
-
-Welcome to **Peak Plan**, a powerful and scalable multi-tenancy project management system built with **Node.js**, **MongoDB**, and **React**. Designed for real-world B2B needs, this project delivers features like Google Sign-In, workspace management, project tracking, task collaboration, role-based permissions, and more. Perfect for developers aiming to create SaaS-based team collaboration platforms.  
+A modern full-stack SaaS platform designed for teams to manage projects, collaborate efficiently, and streamline workflows across organizations. Built with scalability and real-world business requirements in mind using the MERN stack.
 
 ---
 
-## 🌟 Key Features  
+# ✨ Features
 
-- 🔐 **Authentication** (Google Sign-In, Email, Password)  
-- 🏢 **Create & Manage Multiple Workspaces**  
-- 📊 **Projects & Epics Management**  
-- ✅ **Tasks** (CRUD, Status, Priority, Assignee)  
-- 👥 **Roles & Permissions** (Owner, Admin, Member)  
-- ✉️ **Invite Members to Workspaces**  
-- 🔍 **Filters & Search** (Status, Priority, AssignedTo)  
-- 📈 **Analytics Dashboard**  
-- 📅 **Pagination & Load More**  
-- 🔒 **Cookie Session Management**  
-- 🚪 **Logout & Session Termination**  
-- 🌱 **Seeding** for Test Data  
-- 💾 **Mongoose Transactions** for Robust Data Integrity  
-- 🌐 **Built with MERN Stack** (Node.js, MongoDB, React, TypeScript)  
+### 🔐 Secure Authentication
+
+* Google OAuth authentication
+* Email & password login
+* Secure session-based authentication
+* Persistent login sessions
+
+### 🏢 Workspace Management
+
+* Create and manage multiple workspaces
+* Invite team members via email
+* Workspace-level access control
+
+### 📁 Project & Task Management
+
+* Create projects and organize workflows
+* Task creation, editing, and tracking
+* Priority and status management
+* Assign tasks to team members
+* Advanced filtering and search support
+
+### 👥 Team Roles & Permissions
+
+* Role-based authorization system
+* Owner, Admin, and Member permissions
+* Protected workspace resources
+
+### 📊 Productivity Dashboard
+
+* Workspace analytics overview
+* Task progress tracking
+* Team productivity insights
+
+### ⚡ Performance & Scalability
+
+* Pagination and lazy loading
+* Optimized API architecture
+* Database transaction support
+* Scalable multi-tenant design
 
 ---
 
-## 🚀 Tools & Technologies  
+# 🛠️ Tech Stack
 
-This project leverages the latest tools and frameworks for modern development:  
+## Frontend
 
-- **Node.js**: Scalable backend architecture  
-- **React.js**: Dynamic frontend framework  
-- **MongoDB & Mongoose**: Flexible and scalable database solutions  
-- **Google OAuth**: Seamless Google Sign-In integration  
-- **TypeScript**: For a type-safe codebase  
-- **TailwindCSS & Shadcn UI**: Beautiful, responsive design  
-- **Vite.js**: Lightning-fast frontend development  
+* React.js
+* TypeScript
+* Tailwind CSS
+* Shadcn UI
+* Vite
+
+## Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+
+## Authentication & Security
+
+* Google OAuth
+* Cookie-based sessions
+* Protected API routes
 
 ---
 
-## 🔄 Getting Started  
+# 📦 Environment Setup
 
-### 2. Set Up Environment Variables  
+Create a `.env` file in the root directory and configure the following variables:
 
-Create a `.env` file in the root of your project and configure these variables:  
-
-```plaintext  
+```env
 PORT=8000
 NODE_ENV=development
-MONGO_URI="mongodb+srv://<username>:<password>@<>.mongodb.net/teamsync_db"  
 
-SESSION_SECRET="session_secret_key"
+MONGO_URI=your_mongodb_connection_string
 
-GOOGLE_CLIENT_ID=<your-google-client-id>  
-GOOGLE_CLIENT_SECRET=<your-google-client-secret>  
+SESSION_SECRET=your_session_secret
+
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
 GOOGLE_CALLBACK_URL=http://localhost:8000/api/auth/google/callback
 
 FRONTEND_ORIGIN=http://localhost:3000
 FRONTEND_GOOGLE_CALLBACK_URL=http://localhost:3000/google/callback
-```  
-
-### 3. Run the Application  
-
-Install dependencies and start the development server:  
-
-```bash  
-npm install  
-npm run dev  
-```  
-
-Access the backend at `http://localhost:8000`.  
+```
 
 ---
+
+# 🚀 Installation & Running Locally
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Backend server will run on:
+
+```bash
+http://localhost:8000
+```
+
+---
+
+# 🌍 Use Cases
+
+* Startup team collaboration
+* Internal company project management
+* Agile sprint planning
+* Remote team coordination
+* SaaS productivity platforms
+
+---
+
